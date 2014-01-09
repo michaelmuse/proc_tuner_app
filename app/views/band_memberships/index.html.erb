@@ -1,0 +1,12 @@
+<ul>
+<% @memberships.each do |membership| %>
+  <li><%= membership.band.name %>
+    <ul> 
+      <% membership.band.musicians.each do |musician| %>
+        <li><%= musician.name %> </li>
+      <% end %>
+    </ul>
+  </li>
+<% end %>
+
+</ul>
