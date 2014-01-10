@@ -1,11 +1,16 @@
 <h1>Musicians: </h1>
-<ul>
- 
+<table>
   <% @musicians.each do |musician| %>
-  
-  <li><%= musician.name %></li>
-
+    <tr class="musician_<%=musician.id%>">
+      <td><%= musician.name %></td>
+      <td>      
+        <form action="<%=musician_path(musician)%>" method="post">
+          <input type="hidden" value="delete" name="_method">
+          <button class="delete btn-link">DELETE</button>
+        </form>
+      </td>
+    </tr>  
   <% end %>
+</table> 
 
-</ul>
-  <a class="btn btn-primary" href="musicians/new">Create a musician</a>
+<a class="btn btn-primary" href="musicians/new">Create a musician</a>

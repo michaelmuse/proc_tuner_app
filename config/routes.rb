@@ -1,9 +1,10 @@
 TunerApp::Application.routes.draw do
-  get "/" =>  "welcome#index"
+  get '/' =>  'welcome#index'
   resources :musicians
   resources :bands
   resources :band_memberships
   
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
