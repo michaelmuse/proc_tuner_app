@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container">
+  <%= yield %>
+  <hr>
+  <div class="btn-group">
+    <a class="btn btn-default" href="/bands">Bands</a>
+    <a class="btn btn-default" href="/musicians">Musicians</a>
+    <a class="btn btn-default" href="/band_memberships">Band Memberships</a>
+  </div>
+  <hr>
+    <a class="btn btn-default" href="/">Home</a>  
+  </div>
 </body>
 </html>

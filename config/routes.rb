@@ -1,4 +1,5 @@
 TunerApp::Application.routes.draw do
+  get "/" =>  "welcome#index"
   resources :musicians
   resources :bands
   resources :band_memberships

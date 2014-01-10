@@ -12,3 +12,15 @@
  *= require_self
  *= require_tree .
  */
+
+body
+{
+  background-image:url('background.jpg');
+  background-color: #cccccc;
+  background-size: 100%
+}
+
+.container {
+  background-color: white; 
+  min-height: 300px; 
+}

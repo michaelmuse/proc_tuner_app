@@ -1,12 +1,9 @@
-<ul>
+<h1>Band Memberships</h1>
 <% @memberships.each do |membership| %>
-  <li><%= membership.band.name %>
-    <ul> 
-      <% membership.band.musicians.each do |musician| %>
-        <li><%= musician.name %> </li>
-      <% end %>
-    </ul>
-  </li>
-<% end %>
-
+<ul>
+    <li><%= membership.band.name %> </li>
+    <ul><li><%= membership.musician.name %> </li></ul>
 </ul>
+<hr>
+<% end %>
+  <a class="btn btn-primary" href="band_memberships/new">Suggest a new bandmember arrangement</a>
