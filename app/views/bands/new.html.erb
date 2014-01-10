@@ -1,4 +1,6 @@
-<form action="/bands" method="post">
+<!-- <form action="/bands" method="post">
   <input type="text" name="name">
   <button id="submit">SUBMIT</button>
-</form>
+</form> -->
+
+<%= render partial: "band_form", locals: {band: @band} %>
